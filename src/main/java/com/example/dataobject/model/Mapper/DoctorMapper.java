@@ -6,6 +6,8 @@ import com.example.dataobject.model.Doctor;
 import org.mapstruct.Mapper;
 import org.mapstruct.factory.Mappers;
 
+import javax.print.Doc;
+
 @Mapper
 public interface DoctorMapper {
 
@@ -22,5 +24,11 @@ public interface DoctorMapper {
 
     DoctorMapper INSTANCE = Mappers.getMapper(DoctorMapper.class);
 
-    DoctorDTO toDto(Doctor doctor);
+    Doctor toEntity(DoctorRequest request);
+
+    DoctorResponse toDto(Doctor doctor);
+
+    default void update(Doctor _old, Doctor _new) {
+        _old.setName(_new.getName());
+    }
 }
