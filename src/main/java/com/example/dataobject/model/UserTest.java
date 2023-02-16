@@ -50,4 +50,11 @@ public class UserTest {
     public int hashCode() {
         return getClass().hashCode();
     }
+
+
+    /**
+     * INSERT into LOCATION(id, lat, lng, place, description) values (1, 49.8, 24.03 ,'Lviv', 'Lviv is one of the largest and the most beautiful cities of Ukraine.');
+     * INSERT into USER_TEST(id, username, first_name, last_name, password, location_id) values (1, 'Romeo', 'Romeo', 'Montagues' ,'gjt6lf2nt5os', 1);
+     * INSERT into USER_TEST(id, username, first_name, last_name, password, location_id) values (2USER_TEST USER_TEST USER_TEST , 'Juliet', 'Juliet', 'Capulets' ,'s894mjg03hd0', 1);
+     */
 }

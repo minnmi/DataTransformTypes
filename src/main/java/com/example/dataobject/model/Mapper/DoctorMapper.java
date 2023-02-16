@@ -1,6 +1,7 @@
 package com.example.dataobject.model.Mapper;
 
-import com.example.dataobject.model.DTO.DoctorDTO;
+import com.example.dataobject.model.DTO.DoctorRequest;
+import com.example.dataobject.model.DTO.DoctorResponse;
 import com.example.dataobject.model.Doctor;
 import org.mapstruct.Mapper;
 import org.mapstruct.factory.Mappers;
